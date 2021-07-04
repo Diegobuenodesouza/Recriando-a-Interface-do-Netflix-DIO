@@ -11,7 +11,7 @@
 
 body{
     background-color: var(--preta);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
@@ -19,25 +19,23 @@ header .container{
     display: flex;
     flex-direction: row;  
     justify-content: space-between;
-    align-items: center;
-   
+    align-items: center; 
+    
+
 }
 
-header .logo{
-    margin-left: 10px;
+header .logo{    
     color: var(--vermelho);
     font-family: 'Arial Black';
     font-size: 40px;
 }
 
-header nav{
-    margin-right: 25px;
-}
+
 
 header nav a{
     text-decoration: none;
     color: #AAA;
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 header nav a:hover{
@@ -46,31 +44,32 @@ header nav a:hover{
 
 /* filme principal */
 main .filme-principal{  
+
     font-size: 16px;
     display: flex;
     flex-direction: column;
     background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/img/mortal-kombat.jpg");
-    height: 400px;
+    height: 400px;    
     background-size: cover;
     justify-content: center;
     align-items: flex-start;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.container{
+.filme-principal .container{
     margin-left: 50px;
-    width: 600px;
+    width: 70%;
 }
 
 .filme-principal .descricao{
-    margin-top: 5%;
-    
+    margin-top: 10%;    
     text-align: justify;
-    margin-bottom: 8%;
+    margin-bottom: 6%;
+    letter-spacing: 1.5px;
 }
 
-.titulo{
-    font-size: 40px;
+.filme-principal .titulo{
+    font-size: 40px;    
 }
 
 
@@ -94,4 +93,18 @@ main .filme-principal{
 .fas{
     margin-right: 5px;
     font-size: 16px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin: 1.25rem;
+}
+
+.carrosel-filmes .item img{
+    border-radius: 2%;
 }
